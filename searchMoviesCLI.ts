@@ -21,7 +21,7 @@ async function userInterface() {
           "SELECT id, name, date, runtime, budget, revenue, vote_average, votes_count FROM movies WHERE LOWER(name) LIKE LOWER($1) ORDER BY date DESC LIMIT 10;";
         const values = [`%${searchTerm}%`];
         const res = await client.query(text, values);
-        console.table(res.rows);
+        console.log(res.rows);
       } catch (e) {
         // console error
         console.error(e.stack);

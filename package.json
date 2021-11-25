@@ -5,6 +5,7 @@
   "main": "searchMoviesCLI.ts",
   "scripts": {
     "start": "ts-node searchMoviesCLI.ts",
+    "start:fav": "ts-node favouritesCLI.ts",
     "postinstall": "tsc"
   },
   "author": "",
